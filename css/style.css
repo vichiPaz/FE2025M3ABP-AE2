@@ -63,6 +63,7 @@ body {
   width: 100%;
   object-fit: cover;
   height: auto;
+  border-radius: 8px;
 }
 
 .article__content {
@@ -79,6 +80,19 @@ body {
 .article__content p {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .footer {
