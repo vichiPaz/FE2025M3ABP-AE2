@@ -6,6 +6,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: #000;
+  color: #fff;
 }
 
 .navbar {
@@ -16,6 +18,7 @@ body {
   background-color: #000;
   color: #fff;
   width: 100%;
+  border-bottom: #676767 1px solid;
 }
 
 .navbar__logo img {
@@ -65,6 +68,7 @@ body {
 .article__content {
   max-width: 800px;
   text-align: start;
+  color: #d3d3d3;
 }
 
 .article__content h1 {
@@ -75,4 +79,49 @@ body {
 .article__content p {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  border-top: #676767 1px solid;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 3rem;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+}
+
+.footer__social a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+}
+
+.footer__social a:hover {
+  color: #0ce825;
 }
