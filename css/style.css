@@ -15,6 +15,7 @@ body {
   padding: 0.5rem 2.5rem;
   background-color: #000;
   color: #fff;
+  width: 100%;
 }
 
 .navbar__logo img {
@@ -42,4 +43,36 @@ body {
 
 .navbar__list a:hover {
   color: #0ce825;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.article__image img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.article__content {
+  max-width: 800px;
+  text-align: start;
+}
+
+.article__content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.article__content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
