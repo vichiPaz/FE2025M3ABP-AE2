@@ -34,3 +34,9 @@ Para ver el proyecto, simplemente abre el archivo `html/index.html` en tu navega
 - **HTML5:** Para la estructura y el contenido de la página.
 - **CSS3:** Para el diseño y la presentación.
 - **Font Awesome:** Para los iconos de redes sociales.
+
+## Desarrollado por
+
+Valentina Troncoso Molina
+
+vtroncosomolina@gmail.com
