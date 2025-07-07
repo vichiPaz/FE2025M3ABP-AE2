@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +8,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-color: #000;
   color: #fff;
 }
@@ -52,47 +55,124 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 0 3rem;
   gap: 2rem;
 }
 
-.article__image img {
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero__image img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   object-fit: cover;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
 }
 
 .article__content {
-  max-width: 800px;
+  padding: 0 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: start;
   color: #d3d3d3;
 }
 
 .article__content h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-family: 'Young Serif', serif;
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  letter-spacing: 2px;
 }
 
-.article__content p {
-  font-size: 1.2rem;
+.article__content--text {
+  font-size: 1.3rem;
   line-height: 1.5;
+  padding: 5rem 0;
+}
+
+.article__content--quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #0ce825;
+  padding: 12px 0;
 }
 
 .gallery {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 2rem;
   padding: 3rem;
 }
 
+.gallery__title {
+  font-family: 'Young Serif', serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.gallery__pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.gallery__item {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
 .gallery__item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery__item img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.model {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 3rem;
+}
+
+.model__embed iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  width: 65vw;
+  height: 600px;
 }
 
 .footer {
@@ -107,6 +187,7 @@ body {
 .footer {
   width: 100%;
   border-top: #676767 1px solid;
+  margin-top: 3rem;
 }
 
 .footer__content {
@@ -138,4 +219,77 @@ body {
 
 .footer__social a:hover {
   color: #0ce825;
+}
+
+@media (min-width: 768px) {
+  .hero__image {
+    height: 600px;
+  }
+
+  .hero__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .article__content h1 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .article__content--text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding: 5rem 0;
+}
+
+.article__content--quote {
+  font-size: 2.1rem;
+  font-style: italic;
+  color: #0ce825;
+  padding: 12px 0;
+  text-align: center;
+}
+
+  .gallery__pictures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap: 30px;
+  }
+
+  .gallery__item {
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .gallery__item img :hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .footer__content {
+    font-size: 1.1rem;
+  }
+
+  .footer__social a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
 }
